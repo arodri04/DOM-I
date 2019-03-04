@@ -49,6 +49,17 @@ hype[3].textContent = 'Features';
 hype[4].textContent = 'About';
 hype[5].textContent = 'Contact';
 
+let nav = document.querySelector("nav");
+
+const addhypefront = document.createElement('a');
+addhypefront.innerHTML = "WORK PLS";
+nav.prepend(addhypefront);
+
+const addhypeback = document.createElement('a');
+addhypeback.innerHTML = "thanksLiz";
+nav.append(addhypeback);
+
+
 hype.forEach(function(current){
   current.style.color = 'green';
 });
@@ -86,4 +97,6 @@ ptext[5].textContent = '123 Way 456\n Street Somewhere, USA';
 ptext[6].textContent = '1 (888) 888-8888';
 ptext[7].textContent = 'sales@greatidea.io';
 ptext[8].textContent = 'Copyright Great Idea! 2018';
-ptext.style.color = green;
+
+
+
